@@ -1,0 +1,63 @@
+apiVersion: blueprints.cloud.google.com/v1alpha1
+kind: BlueprintMetadata
+metadata:
+  name: graphdb-single-vm
+  annotations:
+    autogenSpecType: SINGLE_VM
+    config.kubernetes.io/local-config: "true"
+spec:
+  info:
+    title: GraphDB deployment package on GCP
+    source:
+      repo: https://github.com/Ontotext-AD/gcp-deployment-package-graphdb.git
+      sourceType: git
+      dir: /
+    description: {}
+  content:
+    documentation:
+      - title: GraphDB Documentation
+        url: https://graphdb.ontotext.com/documentation/
+  interfaces:
+    variables:
+      - name: allowed_ingress_cidrs
+        description: CIDR blocks that are allowed to access the GraphDB port
+        varType: list(string)
+        defaultValue:
+          - 0.0.0.0/0
+      - name: boot_disk_size
+        description: Boot disk size in GBs
+        varType: number
+        defaultValue: 500
+      - name: boot_disk_type
+        description: Type of the boot disk
+        varType: string
+        defaultValue: pd-ssd
+      - name: goog_cm_deployment_name
+        description: Deployment name
+        varType: string
+        defaultValue: graphdb
+      - name: machine_type
+        description: Type of the VM that will be created
+        varType: string
+        defaultValue: n2-highmem-8
+      - name: network_interface
+        description: The network interface to attach the VM to
+        varType: string
+        defaultValue: default
+      - name: project_id
+        description: Project in which the VM will be created
+        varType: string
+        required: true
+      - name: source_image
+        description: Defines the VM image passed from the GCP Marketplace
+        varType: string
+        defaultValue: projects/graphdb-public/global/images/ontotext-graphdb-10-7-3-202409031355
+      - name: zone
+        description: The zone where the VM will be created
+        varType: string
+        defaultValue: us-central1-a
+    outputs:
+      - name: graphdb_address
+        description: External URL address for accessing GraphDB
+      - name: instance_ip
+        description: External IP address for the GraphDB VM instance
