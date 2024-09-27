@@ -28,7 +28,7 @@ resource "google_compute_instance" "graphdb" {
 }
 
 resource "google_compute_firewall" "rules" {
-  name        = "graphdb-allow-ingress"
+  name        = "${var.goog_cm_deployment_name}-graphdb-allow-ingress"
   network     = var.network_interface
   description = "Allow inbound access to GraphDB"
 
