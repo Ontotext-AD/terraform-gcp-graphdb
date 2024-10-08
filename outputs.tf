@@ -5,7 +5,7 @@ locals {
 
 output "instance_ip" {
   description = "External IP address for the GraphDB VM instance"
-  value       =  local.instance_nat_ip
+  value       = local.instance_nat_ip
 }
 
 output "graphdb_address" {
