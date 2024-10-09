@@ -12,7 +12,7 @@ resource "google_compute_instance" "graphdb" {
       # The boot disk must be set to the variable declared in Producer Portal
       image = var.source_image
       size  = var.boot_disk_size
-      type = var.boot_disk_type
+      type  = var.boot_disk_type
     }
   }
 
@@ -22,6 +22,18 @@ resource "google_compute_instance" "graphdb" {
     access_config {
       // Ephemeral public IP
     }
+  }
+
+  # Block the usage of project-level SSH keys
+  metadata = {
+    block-project-ssh-keys = true
+  }
+
+  # Enable VTPM module
+  shielded_instance_config {
+    enable_secure_boot          = true
+    enable_vtpm                 = true
+    enable_integrity_monitoring = true
   }
 
   tags = [var.goog_cm_deployment_name]
