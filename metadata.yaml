@@ -51,7 +51,7 @@ spec:
       - name: source_image
         description: Defines the VM image passed from the GCP Marketplace
         varType: string
-        defaultValue: projects/graphdb-public/global/images/ontotext-graphdb-10-8-0-202411131143
+        defaultValue: projects/graphdb-public/global/images/ontotext-graphdb-10-8-1-202412020843
       - name: zone
         description: The zone where the VM will be created
         varType: string
