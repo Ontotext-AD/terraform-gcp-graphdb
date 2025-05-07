@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.0
+
+* Update default GraphDB version to [11.0.0](https://graphdb.ontotext.com/documentation/11.0/release-notes.html#graphdb-11-0-0)
+
 ## 0.2.5
 
 * Updated to GraphDB [10.8.5](https://graphdb.ontotext.com/documentation/10.8/release-notes.html#graphdb-10-8-5)
