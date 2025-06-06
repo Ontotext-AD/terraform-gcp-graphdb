@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.7
+
+* Updated to GraphDB [10.8.8](https://graphdb.ontotext.com/documentation/10.8/release-notes.html#graphdb-10-8-8)
+
 ## 0.2.6
 
 * Updated to GraphDB [10.8.7](https://graphdb.ontotext.com/documentation/10.8/release-notes.html#graphdb-10-8-7)
