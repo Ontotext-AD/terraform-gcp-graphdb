@@ -74,7 +74,7 @@ Before you begin using this Terraform module, ensure you meet the following prer
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| source\_image | Defines the VM image passed from the GCP Marketplace | `string` | `"projects/graphdb-public/global/images/ontotext-graphdb-11-0-1-202504301455"` | no |
+| source\_image | Defines the VM image passed from the GCP Marketplace | `string` | `"projects/graphdb-public/global/images/ontotext-graphdb-11-0-2-202507031100"` | no |
 | goog\_cm\_deployment\_name | Deployment name | `string` | `"graphdb"` | no |
 | project\_id | Project in which the VM will be created | `string` | n/a | yes |
 | zone | The zone where the VM will be created | `string` | `"us-central1-a"` | no |
