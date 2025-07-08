@@ -48,8 +48,9 @@ versions. The next table shows the version compatability between GraphDB, and th
 
 | GraphDB Terraform                                                              | GraphDB                                                                              |
 |--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| [Version 0.1.x](https://github.com/Ontotext-AD/terraform-gcp-graphdb/releases)  | [Version 10.7.x](https://graphdb.ontotext.com/documentation/10.7/release-notes.html) |
+| [Version 0.1.x](https://github.com/Ontotext-AD/terraform-gcp-graphdb/releases) | [Version 10.7.x](https://graphdb.ontotext.com/documentation/10.7/release-notes.html) |
 | [Version 0.2.x](https://github.com/Ontotext-AD/terraform-gcp-graphdb/releases) | [Version 10.8.x](https://graphdb.ontotext.com/documentation/10.8/release-notes.html) |
+| [Version 0.3.x](https://github.com/Ontotext-AD/terraform-gcp-graphdb/releases) | [Version 11.0.x](https://graphdb.ontotext.com/documentation/11.0/release-notes.html) |
 You can track the particular version updates of GraphDB in the [changelog](CHANGELOG.md).
 
 ## Prerequisites

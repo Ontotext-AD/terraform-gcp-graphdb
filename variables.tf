@@ -5,7 +5,7 @@ variable "source_image" {
   type        = string
   # Set the default value to your image. Marketplace will overwrite this value
   # to a Marketplace owned image on publishing the product
-  default = "projects/graphdb-public/global/images/ontotext-graphdb-11-0-1-202504301455"
+  default = "projects/graphdb-public/global/images/ontotext-graphdb-11-0-2-202507031100"
 }
 
 variable "goog_cm_deployment_name" {
