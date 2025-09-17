@@ -51,6 +51,7 @@ versions. The next table shows the version compatability between GraphDB, and th
 | [Version 0.1.x](https://github.com/Ontotext-AD/terraform-gcp-graphdb/releases) | [Version 10.7.x](https://graphdb.ontotext.com/documentation/10.7/release-notes.html) |
 | [Version 0.2.x](https://github.com/Ontotext-AD/terraform-gcp-graphdb/releases) | [Version 10.8.x](https://graphdb.ontotext.com/documentation/10.8/release-notes.html) |
 | [Version 0.3.x](https://github.com/Ontotext-AD/terraform-gcp-graphdb/releases) | [Version 11.0.x](https://graphdb.ontotext.com/documentation/11.0/release-notes.html) |
+| [Version 0.4.x](https://github.com/Ontotext-AD/terraform-gcp-graphdb/releases) | [Version 11.1.x](https://graphdb.ontotext.com/documentation/11.1/release-notes.html) |
 You can track the particular version updates of GraphDB in the [changelog](CHANGELOG.md).
 
 ## Prerequisites
@@ -74,7 +75,7 @@ Before you begin using this Terraform module, ensure you meet the following prer
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| source\_image | Defines the VM image passed from the GCP Marketplace | `string` | `"projects/graphdb-public/global/images/ontotext-graphdb-11-0-2-202507031100"` | no |
+| source\_image | Defines the VM image passed from the GCP Marketplace | `string` | `"projects/graphdb-public/global/images/ontotext-graphdb-11-1-0-202508211124"` | no |
 | goog\_cm\_deployment\_name | Deployment name | `string` | `"graphdb"` | no |
 | project\_id | Project in which the VM will be created | `string` | n/a | yes |
 | zone | The zone where the VM will be created | `string` | `"us-central1-a"` | no |
