@@ -27,6 +27,7 @@ resource "google_compute_instance" "graphdb" {
   # Block the usage of project-level SSH keys
   metadata = {
     block-project-ssh-keys = true
+    enable-oslogin         = "TRUE"
   }
 
   # Enable VTPM module
