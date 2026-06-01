@@ -1,3 +1,6 @@
 AVD-GCP-0027
 AVD-GCP-0031
 
+# https://avd.aquasec.com/misconfig/gcp-0073
+# This is triggered due to the default CIDR range of 0.0.0.0/0
+GCP-0073
